@@ -48,19 +48,20 @@ Peça ao usuário para inserir vários números separados por vírgula. Depois, 
 📌 Exemplo:
 Entrada: 8, 3, 5, 1, 9  
 Saída: 1, 3, 5, 8, 9 
-------------------------------------------------------------------------
-
 
 */
+// ATIVIDADE 01
+//01 atividade
+const imaparpar = (num) => {
+    return num % 2 == 0 ? "O número é par!" : "O número é ímpar!";
+  };
+  console.log(imaparpar(10));
+  console.log(imaparpar(3));
+  console.log(imaparpar(2));
 
-// ATIVIDADE 05
-var numeros = [3, 5, 1, 8, 6, 2];
-console.table(numeros);
+  console.log("***************************************")
 
-numeros.sort();
-console.table(numeros);
-
-// ATIVIDADE 02
+ // ATIVIDADE 02
 var numeros = 4;
 console.log(numeros, "x 1 =", numeros * 1);
 console.log(numeros, "x 2 =", numeros * 2);
@@ -71,15 +72,34 @@ console.log(numeros, "x 6 =", numeros * 6);
 console.log(numeros, "x 7 =", numeros * 7);
 console.log(numeros, "x 8 =", numeros * 8);
 console.log(numeros, "x 9 =", numeros * 9);
-console.log(numeros, "x 10 =", numeros * 10);
+console.log(numeros, "x 10 =", numeros * 10); 
+
+console.log("***************************************")
 
 // ATIVIDADE 03
 console.log("Fatorial de 6! =", 6 * 5 * 4 * 3 * 2 * 1);
+
+console.log("***************************************")
 
 // ATIVIDADE 04
 let dados = [10, 20, 30, 40];
 var soma = dados[0] + dados[1] + dados[2] + dados[3];
 console.log(soma);
+ 
+console.log("***************************************")
+
+// ATIVIDADE 05
+var numeros = [3, 5, 1, 8, 6, 2];
+console.table(numeros);
+
+numeros.sort();
+console.table(numeros);
+
+console.log("***************************************")
+
+
+
+
 
 
 //  
