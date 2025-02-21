@@ -14,15 +14,6 @@ var matriz = [
     [1, 9, 2],
     [7, 1, 4],
 ];
-
-console.log("***********************");
-
-console.table(matriz);
-var matriz = [
-    [3, 5, 8],
-    [1, 9, 2],
-    [7, 1, 4],
-  ];
   
   console.log("-------------------------------");
   
@@ -30,10 +21,39 @@ var matriz = [
   
   for (let linha = 0; linha < matriz.length; linha++) {
     for (let coluna = 0; coluna < matriz[0].length; coluna++) {
-      console.log(
-        `Matriz [${linha[0][1][2]}][${coluna[0][1][2]}] = ${
-          matriz[linha[0][1][2]][coluna[0][1][2]]}
-        }`
-      );
+      linha == coluna &&
+        console.log(`Matriz [${linha}][${coluna}] = ${matriz[linha][coluna]}`);
     }
   }
+
+   /*
+Dada a matriz abaixo, faça um programa em JavaScrpit que multiplique seus elementos por um valor x e exiba ao usuário a matriz antes e após a multiplicação.
+|  3   5   8   |
+|  1   9   2   |
+|  7   1   4   |
+
+*/
+var matriz = [
+    [3, 5, 8],
+    [1, 9, 2],
+    [7, 1, 4],
+];
+  
+var x = 4
+console.table(matriz);
+
+for(let linha = 0; linha < matriz.length; linha++){
+    for(let coluna = 0; coluna< matriz[0].length; coluna++) {
+        matriz[linha][coluna] *= x;
+
+    }
+}
+  console.table(matriz);
+  
+
+  // Faça um loop FOR onde apresente os números ímpares de 0 a 100;
+  // Não pode ser resolvido com conta ou resto de divisão
+  for (let i = 0; i <= 100; i++) {
+    console.log(i);
+  }
+  
